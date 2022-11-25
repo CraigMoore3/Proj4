@@ -95,18 +95,6 @@ function Process45() {
   }
 }
 
-// function mouseClicked() {
-//   //vid.pause();
-//   if (isShown) {
-//     vid2.hide();
-//     isShown = false;
-//   } else {
-//     vid2.show();
-//     isShown = true;
-//   }
-// }
-
-
 function vidLoad() {
   vid.play()
   is1Shown = true;
@@ -118,6 +106,17 @@ function vidLoad() {
   // vid.play()
   // vid2.play()
 }
+
+// function mouseClicked() {
+//   //vid.pause();
+//   if (isShown) {
+//     vid2.hide();
+//     isShown = false;
+//   } else {
+//     vid2.show();
+//     isShown = true;
+//   }
+// }
 
 // // Switch function for knobs
 // switch (data[1]) {
