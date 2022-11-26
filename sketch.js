@@ -4,7 +4,7 @@
 var midi, data;
 var note, vel;
 
-let vid;
+let vid1;
 let vid2;
 
 let isShown;
@@ -17,13 +17,13 @@ let isPressed;
 function setup() {
   noCanvas();
 
-  vid = createVideo(['t1.mp4'], vidLoad);
+  vid1 = createVideo(['t1.mp4'], vidLoad);
   vid2 = createVideo(['t2.mp4'], vidLoad);
 
-  vid.size(400, AUTO);
+  vid1.size(400, AUTO);
   vid2.size(200,AUTO);
 
-  vid.position(100, 0);
+  vid1.position(100, 0);
   vid2.position(50, 150);
 
 
@@ -76,11 +76,11 @@ function onMIDIMessage(message) {
 
 function Process44() {
   if (is1Shown) {
-    vid.hide();
+    vid1.hide();
     is1Shown = false
   } else {
-    vid.show();
-    vid.loop();
+    vid1.show();
+    vid1.loop();
     is1Shown = true;
   }
 }
@@ -96,9 +96,9 @@ function Process45() {
 }
 
 function vidLoad() {
-  vid.play()
+  vid1.play()
   is1Shown = true;
-  vid.hide()
+  vid1.hide()
 
   vid2.play()
   vid2.hide()
