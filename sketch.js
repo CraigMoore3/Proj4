@@ -30,33 +30,33 @@ function setup() {
   vid9 = createVideo(['assets/beefPack.webm'], vidLoad);
   vid10 = createVideo(['assets/openFish.webm'], vidLoad);
   vid11 = createVideo(['assets/goopPour.webm'], vidLoad);
-  vid12 = createVideo(['assets/grossPan1.webm'], vidLoad);
+  vid12 = createVideo(['assets/grossPan1.mp4'], vidLoad);
 
   // Video Size
-  vid1.size(1000, AUTO);
-  vid2.size(1000,AUTO);
-  vid3.size(1000,AUTO);
-  vid4.size(1000,AUTO);
-  vid5.size(360,270);
-  vid6.size(500,AUTO);
-  vid7.size(960,720);
-  vid8.size(200,AUTO);
-  vid9.size(200,AUTO);
-  vid10.size(200,AUTO);
-  vid11.size(200,AUTO);
-  vid12.size(400,AUTO);
+  vid1.size(1632,918);
+  vid2.size(1632,918);
+  vid3.size(1632,918);
+  vid4.size(1632,918);
+  vid5.size(480,360);
+  vid6.size(480,360);
+  vid7.size(480,360);
+  vid8.size(480,360);
+  vid9.size(640,360);
+  vid10.size(640,360);
+  vid11.size(640,360);
+  vid12.size(640,360);
 
   // Video Position
-  vid1.position(0, 50);
-  vid2.position(0, 50);
-  vid3.position(0, 50);
-  vid4.position(0, 50);
-  vid5.position(200, 0);
-  vid6.position(0, 50);
+  vid1.position(25, 50);
+  vid2.position(25, 50);
+  vid3.position(25, 50);
+  vid4.position(25, 50);
+  vid5.position(1152, 558);
+  vid6.position(25, 50);
   vid7.position(500, 100);
   vid8.position(0, 150);
   vid9.position(0, 200);
-  vid10.position(50, 50);
+  vid10.position(1152, 50);
   vid11.position(100, 100);
   vid12.position(150, 150);
 
