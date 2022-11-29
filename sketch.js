@@ -5,7 +5,6 @@ var midi, data;
 var note, vel;
 
 let vid1, vid2, vid3, vid4, vid5, vid6, vid7, vid8, vid9, vid10, vid11, vid12;
-let myAudio;
 
 let isV1Shown, isV2Shown, isV3Shown, isV4Shown, isV5Shown, isV6Shown, isV7Shown, isV8Shown, isV9Shown, isV10Shown, isV11Shown, isV12Shown;
 
@@ -17,53 +16,46 @@ function setup() {
 
   noCanvas();
 
-  myAudio = createAudio('p4Sound.mp3', vidLoad);
-  myAudio.autoplay(true);
-
   // Create Videos
-  vid1 = createVideo(['beefBase.mp4'], vid => {
-    vid1.play()
-    isV1Shown = false;
-    vid1.hide()
-  });
-  vid2 = createVideo(['fishTopping.mp4'], vidLoad);
-  vid3 = createVideo(['glowTopping.mp4'], vidLoad);
-  vid4 = createVideo(['oven.mp4'], vidLoad);
-  vid5 = createVideo(['fishFall.mp4'], vidLoad);
-  vid6 = createVideo(['fishCut.mp4'], vidLoad);
-  vid7 = createVideo(['roastCut.mp4'], vidLoad);
-  vid8 = createVideo(['turkeyTrot.mp4'], vidLoad);
-  vid9 = createVideo(['beefPack.mp4'], vidLoad);
-  vid10 = createVideo(['openFish.mp4'], vidLoad);
-  vid11 = createVideo(['goopPour.mp4'], vidLoad);
-  vid12 = createVideo(['grossPan.mp4'], vidLoad);
+  vid1 = createVideo(['assets/beefBase.webm'], vidLoad);
+  // vid2 = createVideo(['fishTopping.mp4'], vidLoad);
+  // vid3 = createVideo(['glowTopping.mp4'], vidLoad);
+  // vid4 = createVideo(['oven.mp4'], vidLoad);
+  // vid5 = createVideo(['fishFall.mp4'], vidLoad);
+  // vid6 = createVideo(['fishCut.mp4'], vidLoad);
+  // vid7 = createVideo(['roastCut.mp4'], vidLoad);
+  // vid8 = createVideo(['turkeyTrot.mp4'], vidLoad);
+  // vid9 = createVideo(['beefPack.mp4'], vidLoad);
+  // vid10 = createVideo(['openFish.mp4'], vidLoad);
+  // vid11 = createVideo(['goopPour.mp4'], vidLoad);
+  vid12 = createVideo(['assets/grossPan1.mp4'], vidLoad);
 
   // Video Size
-  vid1.size(1700, AUTO);
-  vid2.size(1700,AUTO);
-  vid3.size(1700,AUTO);
-  vid4.size(1700,AUTO);
-  vid5.size(200,AUTO);
-  vid6.size(200,AUTO);
-  vid7.size(200,AUTO);
-  vid8.size(200,AUTO);
-  vid9.size(200,AUTO);
-  vid10.size(200,AUTO);
-  vid11.size(200,AUTO);
+  vid1.size(1000, AUTO);
+  // vid2.size(1700,AUTO);
+  // vid3.size(1700,AUTO);
+  // vid4.size(1700,AUTO);
+  // vid5.size(200,AUTO);
+  // vid6.size(200,AUTO);
+  // vid7.size(200,AUTO);
+  // vid8.size(200,AUTO);
+  // vid9.size(200,AUTO);
+  // vid10.size(200,AUTO);
+  // vid11.size(200,AUTO);
   vid12.size(200,AUTO);
 
   // Video Position
   vid1.position(0, 50);
-  vid2.position(0, 50);
-  vid3.position(0, 50);
-  vid4.position(0, 50);
-  vid5.position(200, 0);
-  vid6.position(0, 50);
-  vid7.position(0, 100);
-  vid8.position(0, 150);
-  vid9.position(0, 200);
-  vid10.position(50, 50);
-  vid11.position(100, 100);
+  // vid2.position(0, 50);
+  // vid3.position(0, 50);
+  // vid4.position(0, 50);
+  // vid5.position(200, 0);
+  // vid6.position(0, 50);
+  // vid7.position(0, 100);
+  // vid8.position(0, 150);
+  // vid9.position(0, 200);
+  // vid10.position(50, 50);
+  // vid11.position(100, 100);
   vid12.position(150, 150);
 
 
@@ -104,69 +96,87 @@ function onMIDIMessage(message) {
   note = data[1];
   vel = data[2];
 
+ // Pad Note Values ( 0 - 127 )
+// 1 = 44   2 = 45   3 = 46   4 = 47
+// 5 = 48   6 = 49   7 = 50   8 = 51 
+// 9 = 36   10 = 37   11 = 38   12 = 39
+// 13 = 40   14 = 41   15 = 42   16 = 43
+
+// Pad 1
   if (note == 44 && vel == 0) {
     Process44()
   }
 
+  // Pad 2
   if (note == 45 && vel == 0) {
     Process45()
   }
 
+  // Pad 3
   if (note == 46 && vel == 0) {
     Process46()
   }
 
+  // Pad 4
   if (note == 47 && vel == 0) {
     Process47()
   }
 
+  // Pad 5
   if (note == 48 && vel == 0) {
-    Process49()
+    Process48()
   }
 
+  // Pad 6
   if (note == 49 && vel == 0) {
     Process49()
   }
 
+  // Pad 7
   if (note == 50 && vel == 0) {
     Process50()
   }
 
+  // Pad 8
   if (note == 51 && vel == 0) {
     Process51()
   }
 
+  // Pad 9
   if (note == 36 && vel == 0) {
     Process36()
   }
 
+  // Pad 10
   if (note == 37 && vel == 0) {
     Process37()
   }
 
+  // Pad 11
   if (note == 38 && vel == 0) {
     Process38()
   }
 
+  // Pad 12
   if (note == 39 && vel == 0) {
     Process39()
   }
 
-  if (note == 40 && vel == 0) {
-    Process40()
-  }
+//   if (note == 40 && vel == 0) {
+//     Process40()
+//   }
 
-  if (note == 41 && vel == 0) {
-    Process41()
-  }
+//   if (note == 41 && vel == 0) {
+//     Process41()
+//   }
 
-  if (note == 42 && vel == 0) {
-    Process42()
-  }
+//   if (note == 42 && vel == 0) {
+//     Process42()
+//   }
 
-  if (note == 43 && vel == 0) {
-    Process43()
-  }
+//   if (note == 43 && vel == 0) {
+//     Process43()
+//   }
 }
 
 
@@ -320,47 +330,47 @@ function vidLoad() {
   isV1Shown = true;
   vid1.hide()
 
-  vid2.play()
-  isV2Shown = true;
-  vid2.hide()
+  // vid2.play()
+  // isV2Shown = true;
+  // vid2.hide()
 
-  vid3.play()
-  isV3Shown = true;
-  vid3.hide()
+  // vid3.play()
+  // isV3Shown = true;
+  // vid3.hide()
 
-  vid4.play()
-  isV4Shown = true;
-  vid4.hide()
+  // vid4.play()
+  // isV4Shown = true;
+  // vid4.hide()
 
-  vid5.play()
-  isV5Shown = true;
-  vid5.hide()
+  // vid5.play()
+  // isV5Shown = true;
+  // vid5.hide()
 
-  vid6.play()
-  isV6Shown = true;
-  vid6.hide()
+  // vid6.play()
+  // isV6Shown = true;
+  // vid6.hide()
 
-  vid7.play()
-  isV7Shown = true;
-  vid7.hide()
+  // vid7.play()
+  // isV7Shown = true;
+  // vid7.hide()
 
-  vid8.play()
-  isV8Shown = true;
-  vid8.hide()
+  // vid8.play()
+  // isV8Shown = true;
+  // vid8.hide()
 
-  vid9.play()
-  isV9Shown = false;
-  vid9.hide()
+  // vid9.play()
+  // isV9Shown = false;
+  // vid9.hide()
 
-  vid10.play()
-  isV10Shown = false;
-  vid10.hide()
+  // vid10.play()
+  // isV10Shown = false;
+  // vid10.hide()
 
-  vid11.play()
-  isV11Shown = false;
-  vid11.hide()
+  // vid11.play()
+  // isV11Shown = false;
+  // vid11.hide()
 
   vid12.play()
-  isV12Shown = false;
+  isV12Shown = true;
   vid12.hide()
 }
