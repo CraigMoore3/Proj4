@@ -1,12 +1,14 @@
 // let width = 400;
 // let height = 400;
 
+
 var midi, data;
 var note, vel;
 
 let vid1, vid2, vid3, vid4, vid5, vid6, vid7, vid8, vid9, vid10, vid11, vid12;
 
 let isV1Shown, isV2Shown, isV3Shown, isV4Shown, isV5Shown, isV6Shown, isV7Shown, isV8Shown, isV9Shown, isV10Shown, isV11Shown, isV12Shown;
+
 
 let isPressed;
 
@@ -18,44 +20,44 @@ function setup() {
 
   // Create Videos
   vid1 = createVideo(['assets/beefBase.webm'], vidLoad);
-  // vid2 = createVideo(['fishTopping.mp4'], vidLoad);
-  // vid3 = createVideo(['glowTopping.mp4'], vidLoad);
-  // vid4 = createVideo(['oven.mp4'], vidLoad);
-  // vid5 = createVideo(['fishFall.mp4'], vidLoad);
-  // vid6 = createVideo(['fishCut.mp4'], vidLoad);
-  // vid7 = createVideo(['roastCut.mp4'], vidLoad);
-  // vid8 = createVideo(['turkeyTrot.mp4'], vidLoad);
-  // vid9 = createVideo(['beefPack.mp4'], vidLoad);
-  // vid10 = createVideo(['openFish.mp4'], vidLoad);
-  // vid11 = createVideo(['goopPour.mp4'], vidLoad);
-  vid12 = createVideo(['assets/grossPan1.mp4'], vidLoad);
+  vid2 = createVideo(['assets/fishTopping.webm'], vidLoad);
+  vid3 = createVideo(['assets/glowTopping.webm'], vidLoad);
+  vid4 = createVideo(['assets/oven.webm'], vidLoad);
+  vid5 = createVideo(['assets/fishFall.mp4'], vidLoad);
+  vid6 = createVideo(['assets/fishCut.webm'], vidLoad);
+  vid7 = createVideo(['assets/roastCut.webm'], vidLoad);
+  vid8 = createVideo(['assets/turkeyTrot.webm'], vidLoad);
+  vid9 = createVideo(['assets/beefPack.webm'], vidLoad);
+  vid10 = createVideo(['assets/openFish.webm'], vidLoad);
+  vid11 = createVideo(['assets/goopPour.webm'], vidLoad);
+  vid12 = createVideo(['assets/grossPan1.webm'], vidLoad);
 
   // Video Size
   vid1.size(1000, AUTO);
-  // vid2.size(1700,AUTO);
-  // vid3.size(1700,AUTO);
-  // vid4.size(1700,AUTO);
-  // vid5.size(200,AUTO);
-  // vid6.size(200,AUTO);
-  // vid7.size(200,AUTO);
-  // vid8.size(200,AUTO);
-  // vid9.size(200,AUTO);
-  // vid10.size(200,AUTO);
-  // vid11.size(200,AUTO);
-  vid12.size(200,AUTO);
+  vid2.size(1000,AUTO);
+  vid3.size(1000,AUTO);
+  vid4.size(1000,AUTO);
+  vid5.size(360,270);
+  vid6.size(500,AUTO);
+  vid7.size(960,720);
+  vid8.size(200,AUTO);
+  vid9.size(200,AUTO);
+  vid10.size(200,AUTO);
+  vid11.size(200,AUTO);
+  vid12.size(400,AUTO);
 
   // Video Position
   vid1.position(0, 50);
-  // vid2.position(0, 50);
-  // vid3.position(0, 50);
-  // vid4.position(0, 50);
-  // vid5.position(200, 0);
-  // vid6.position(0, 50);
-  // vid7.position(0, 100);
-  // vid8.position(0, 150);
-  // vid9.position(0, 200);
-  // vid10.position(50, 50);
-  // vid11.position(100, 100);
+  vid2.position(0, 50);
+  vid3.position(0, 50);
+  vid4.position(0, 50);
+  vid5.position(200, 0);
+  vid6.position(0, 50);
+  vid7.position(500, 100);
+  vid8.position(0, 150);
+  vid9.position(0, 200);
+  vid10.position(50, 50);
+  vid11.position(100, 100);
   vid12.position(150, 150);
 
 
@@ -313,6 +315,7 @@ function Process39 () {
   }
 }
 
+
   // Pad Note Values ( 0 - 127 )
 // 1 = 44   2 = 45   3 = 46   4 = 47
 // 5 = 48   6 = 49   7 = 50   8 = 51 
@@ -327,45 +330,45 @@ function vidLoad() {
   isV1Shown = true;
   vid1.hide()
 
-  // vid2.play()
-  // isV2Shown = true;
-  // vid2.hide()
+  vid2.play()
+  isV2Shown = true;
+  vid2.hide()
 
-  // vid3.play()
-  // isV3Shown = true;
-  // vid3.hide()
+  vid3.play()
+  isV3Shown = true;
+  vid3.hide()
 
-  // vid4.play()
-  // isV4Shown = true;
-  // vid4.hide()
+  vid4.play()
+  isV4Shown = true;
+  vid4.hide()
 
-  // vid5.play()
-  // isV5Shown = true;
-  // vid5.hide()
+  vid5.play()
+  isV5Shown = true;
+  vid5.hide()
 
-  // vid6.play()
-  // isV6Shown = true;
-  // vid6.hide()
+  vid6.play()
+  isV6Shown = true;
+  vid6.hide()
 
-  // vid7.play()
-  // isV7Shown = true;
-  // vid7.hide()
+  vid7.play()
+  isV7Shown = true;
+  vid7.hide()
 
-  // vid8.play()
-  // isV8Shown = true;
-  // vid8.hide()
+  vid8.play()
+  isV8Shown = true;
+  vid8.hide()
 
-  // vid9.play()
-  // isV9Shown = false;
-  // vid9.hide()
+  vid9.play()
+  isV9Shown = false;
+  vid9.hide()
 
-  // vid10.play()
-  // isV10Shown = false;
-  // vid10.hide()
+  vid10.play()
+  isV10Shown = false;
+  vid10.hide()
 
-  // vid11.play()
-  // isV11Shown = false;
-  // vid11.hide()
+  vid11.play()
+  isV11Shown = false;
+  vid11.hide()
 
   vid12.play()
   isV12Shown = true;
