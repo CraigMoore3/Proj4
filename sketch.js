@@ -52,13 +52,13 @@ function setup() {
   vid3.position(25, 50);
   vid4.position(25, 50);
   vid5.position(1152, 558);
-  vid6.position(25, 50);
-  vid7.position(500, 100);
-  vid8.position(0, 150);
-  vid9.position(0, 200);
+  vid6.position(75, 100);
+  vid7.position(600, 650);
+  vid8.position(600, 200);
+  vid9.position(500, 50);
   vid10.position(1152, 50);
-  vid11.position(100, 100);
-  vid12.position(150, 150);
+  vid11.position(25, 600);
+  vid12.position(750, 600);
 
 
   // MIDI SETUP
