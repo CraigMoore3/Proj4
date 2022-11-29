@@ -54,7 +54,7 @@ function setup() {
   vid5.position(1152, 558);
   vid6.position(75, 100);
   vid7.position(600, 650);
-  vid8.position(600, 200);
+  vid8.position(600, 350);
   vid9.position(500, 50);
   vid10.position(1152, 50);
   vid11.position(25, 600);
@@ -327,35 +327,35 @@ function Process39 () {
 function vidLoad() {
   
   vid1.play()
-  isV1Shown = true;
+  isV1Shown = false;
   vid1.hide()
 
   vid2.play()
-  isV2Shown = true;
+  isV2Shown = false;
   vid2.hide()
 
   vid3.play()
-  isV3Shown = true;
+  isV3Shown = false;
   vid3.hide()
 
   vid4.play()
-  isV4Shown = true;
+  isV4Shown = false;
   vid4.hide()
 
   vid5.play()
-  isV5Shown = true;
+  isV5Shown = false;
   vid5.hide()
 
   vid6.play()
-  isV6Shown = true;
+  isV6Shown = false;
   vid6.hide()
 
   vid7.play()
-  isV7Shown = true;
+  isV7Shown = false;
   vid7.hide()
 
   vid8.play()
-  isV8Shown = true;
+  isV8Shown = false;
   vid8.hide()
 
   vid9.play()
@@ -371,6 +371,6 @@ function vidLoad() {
   vid11.hide()
 
   vid12.play()
-  isV12Shown = true;
+  isV12Shown = false;
   vid12.hide()
 }
